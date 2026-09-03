@@ -1,0 +1,9 @@
+node_modules/
+dist/
+Backup/
+native/*/target/
+index.js
+index.js.map
+*.tsbuildinfo
+.vscode/
+*.log

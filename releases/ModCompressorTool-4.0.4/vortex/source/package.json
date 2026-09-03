@@ -1,0 +1,39 @@
+{
+  "name": "mod-compressor",
+  "version": "1.1.0",
+  "description": "Vortex extension to compress mods using Windows NTFS/WOF transparent compression (compact.exe)",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:helper && npm run build:js",
+    "build:helper": "cargo build --release --manifest-path native/mod-compressor-helper/Cargo.toml && powershell -NoProfile -ExecutionPolicy Bypass -Command \"Copy-Item -LiteralPath native/mod-compressor-helper/target/release/mod-compressor-helper.exe -Destination native/mod-compressor-helper.exe -Force\"",
+    "build:js": "esbuild src/index.ts --bundle --platform=node --target=node14 --outfile=index.js --external:vortex-api --external:react --external:react-dom",
+    "benchmark:helper": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/benchmark-helper.ps1",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "ci": "npm test && npx tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.3.29",
+    "esbuild": "^0.20.0",
+    "react": "^18.3.1",
+    "typescript": "^5.3.0",
+    "vitest": "^1.2.0"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.7.2",
+    "react-dom": "^18.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nwn900/mod-compressor-vortex-extension.git"
+  },
+  "license": "GPL-3.0",
+  "vortex": {
+    "name": "Mod Compressor",
+    "description": "Compress Bethesda game mods using Windows NTFS transparent compression (compact.exe). Port of MO2's mod_compressor_tool plugin.",
+    "author": "Community",
+    "version": "1.1.0",
+    "minimumVersion": "1.0.0"
+  }
+}

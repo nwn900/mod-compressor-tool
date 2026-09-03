@@ -6,8 +6,8 @@ available, with `compact.exe` as a fallback.
 
 ## Current release
 
-Version **4.0.3** is in [`releases/ModCompressorTool-4.0.3`](releases/ModCompressorTool-4.0.3).
-The ready-to-install archive is [`releases/ModCompressorTool-4.0.3.zip`](releases/ModCompressorTool-4.0.3.zip)
+Version **4.0.4** is in [`releases/ModCompressorTool-4.0.4`](releases/ModCompressorTool-4.0.4).
+The ready-to-install archive is [`releases/ModCompressorTool-4.0.4.zip`](releases/ModCompressorTool-4.0.4.zip)
 and its SHA-256 checksum is next to it.
 
 Install the archive with MO2 closed. Copy its contents into the MO2 folder so
@@ -22,7 +22,8 @@ MO2\plugins\native\mod-compressor-helper.exe
 
 - [`NEXUSMODS_CHANGELOG.md`](NEXUSMODS_CHANGELOG.md) — plain-language user changelog.
 - [`VORTEX_VS_MO2_DIFFERENTIAL_ANALYSIS.md`](VORTEX_VS_MO2_DIFFERENTIAL_ANALYSIS.md) — detailed comparison and port plan.
-- [`releases/ModCompressorTool-4.0.3/README.md`](releases/ModCompressorTool-4.0.3/README.md) — release notes, hashes, and install details.
+- [`releases/ModCompressorTool-4.0.4/README.md`](releases/ModCompressorTool-4.0.4/README.md) — release notes, hashes, and install details.
+- [`releases/ModCompressorTool-4.0.4/vortex/`](releases/ModCompressorTool-4.0.4/vortex/) — Vortex 1.1.0 runtime and source package.
 
 The native helper source and build instructions are under [`native`](native).
 The project is licensed under GPL-3.0; the release package includes the full
