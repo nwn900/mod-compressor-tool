@@ -55,7 +55,14 @@ jobs:
               throw "Release file is missing: $file"
             }
           }
-          Compress-Archive -Path $required -DestinationPath $output -Force
+          # Compress-Archive flattens a LiteralPath such as native/foo.exe.
+          # Stage the package first so the helper keeps the directory that the
+          # extension's lookup code expects.
+          $staging = Join-Path $env:RUNNER_TEMP "mod-compressor-vortex-$version"
+          New-Item -ItemType Directory -Force -Path (Join-Path $staging 'native') | Out-Null
+          Copy-Item -LiteralPath 'info.json','index.js','README.md','CHANGELOG.md','LICENSE-GPL-3.0.txt' -Destination $staging -Force
+          Copy-Item -LiteralPath 'native/mod-compressor-helper.exe' -Destination (Join-Path $staging 'native/mod-compressor-helper.exe') -Force
+          Compress-Archive -Path (Join-Path $staging '*') -DestinationPath $output -Force
           echo "artifact=$artifact" >> $env:GITHUB_ENV
           echo "artifact_path=$output" >> $env:GITHUB_ENV
 
