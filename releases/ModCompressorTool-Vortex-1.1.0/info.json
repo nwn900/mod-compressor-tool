@@ -1,0 +1,6 @@
+{
+  "name": "Mod Compressor",
+  "author": "Community",
+  "version": "1.1.0",
+  "description": "Compress Bethesda game mods using Windows transparent NTFS compression (compact.exe). Supports LZX, XPRESS4K, XPRESS8K, and XPRESS16K algorithms."
+}
