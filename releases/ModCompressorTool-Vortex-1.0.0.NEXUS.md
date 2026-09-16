@@ -26,6 +26,13 @@ PNG and is kept beside the two runtime entry files. There is no enclosing
 - Changelog: use the included `CHANGELOG.md` text.
 - Description: use [`ModCompressorTool-Vortex-1.0.0.NEXUS_DESCRIPTION.bbcode`](ModCompressorTool-Vortex-1.0.0.NEXUS_DESCRIPTION.bbcode).
 
+## API update record
+
+- Nexus v3 mod file ID: `7977657` (mod API ID `9856949946650`, page `site/mods/2330`).
+- New primary file version: `1.0.0`, version ID `9856949954120`, game-scoped file ID `9800`.
+- The previous `1` version (version ID `9856949954119`, game-scoped file ID `9799`) is retained as an old version.
+- The new file was uploaded through the Nexus v3 upload and file-version endpoints using the archive hash recorded above.
+
 ## Checks before submission
 
 1. Run `scripts/validate-vortex-package.ps1` against the release directory and
