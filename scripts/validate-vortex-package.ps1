@@ -11,6 +11,7 @@ $root = (Resolve-Path -LiteralPath $PackageRoot).Path
 $required = @(
     "info.json",
     "index.js",
+    "gameart.png",
     "native\mod-compressor-helper.exe",
     "README.md",
     "CHANGELOG.md",
@@ -44,6 +45,23 @@ if ([string]::IsNullOrWhiteSpace([string]$info.name) -or
 }
 if ([string]$info.version -notmatch "^\d+\.\d+\.\d+$") {
     throw "info.json version is not a stable SemVer value: $($info.version)"
+}
+
+$gameArtPath = Join-Path $root "gameart.png"
+Add-Type -AssemblyName System.Drawing
+$gameArt = [System.Drawing.Image]::FromFile($gameArtPath)
+try {
+    if ($gameArt.Width -ne 640 -or $gameArt.Height -ne 360) {
+        throw "gameart.png must be exactly 640x360 pixels; found $($gameArt.Width)x$($gameArt.Height)"
+    }
+    if ($gameArt.RawFormat.Guid -ne [System.Drawing.Imaging.ImageFormat]::Png.Guid) {
+        throw "gameart.png must be a PNG image"
+    }
+} finally {
+    $gameArt.Dispose()
+}
+if ((Get-Item -LiteralPath $gameArtPath).Length -ge 1MB) {
+    throw "gameart.png must be smaller than 1 MB"
 }
 
 $indexText = Get-Content -Raw -LiteralPath (Join-Path $root "index.js")

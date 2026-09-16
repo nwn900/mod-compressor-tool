@@ -27,6 +27,9 @@ For manual testing, extract the archive so that `index.js` and `info.json` are
 directly inside `%APPDATA%\Vortex\plugins\mod-compressor`, then restart Vortex.
 Do not put the files inside an additional `vortex` or version-named folder.
 
+The archive also includes `gameart.png` at its root. This is the artwork Vortex
+uses for the extension and must stay beside `index.js` and `info.json`.
+
 ## Usage
 
 1. Choose targets such as textures, meshes, sounds, LOD/DynDOLOD, animations,

@@ -25,6 +25,8 @@ helper is included at `native/mod-compressor-helper.exe`.
 ### Packaging
 
 - `info.json` and the bundled `index.js` are at the archive root.
+- Added the Vortex game artwork at the archive root as `gameart.png` (640x360
+  PNG), so the package has the complete extension layout.
 - The helper, documentation, changelog, and GPL-3.0 license are included.
 - MO2 files, source trees, build outputs, and duplicate helper copies are not
   included in this Vortex runtime archive.
