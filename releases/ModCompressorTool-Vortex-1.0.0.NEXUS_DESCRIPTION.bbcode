@@ -1,0 +1,46 @@
+[center][b]Mod Compressor — Vortex Extension[/b][/center]
+[center]Save disk space by compressing Bethesda game mod files without changing how the game reads them.[/center]
+
+[b]What it does[/b]
+
+Mod Compressor uses Windows NTFS transparent compression. Windows compresses the files on disk and expands them automatically when the game needs them. Your mod files stay in their normal folders, so Vortex and the game can continue to use them normally.
+
+The extension is designed for managed Bethesda game mods in Vortex. It supports Skyrim Special Edition, Fallout 4, Starfield, and other Bethesda profiles.
+
+[b]Main features[/b]
+
+[list]
+[*][b]Scan before changing files[/b] — see which files are already compressed and how much space they use.
+[*][b]Compress or decompress selected mods[/b] — work on one mod or a filtered group.
+[*][b]Four Windows algorithms[/b] — XPRESS4K, XPRESS8K (default), XPRESS16K, and LZX.
+[*][b]Useful target filters[/b] — textures, meshes, sounds, animations, LOD/DynDOLOD, or the entire mod.
+[*][b]Accurate progress[/b] — the bar reports files completed for the current mod instead of filling immediately.
+[*][b]Safe large-list selection[/b] — Select all keeps the full selection without freezing the Vortex window.
+[*][b]Verification after operations[/b] — the extension checks the resulting compression state when command output is incomplete.
+[*][b]Reliable fallback[/b] — if the bundled helper cannot run, the extension uses Windows compact.exe.
+[/list]
+
+[b]Requirements[/b]
+
+[list]
+[*]Windows with an NTFS volume and compact.exe.
+[*]Vortex 1.0.0 or newer.
+[*]A supported Bethesda game profile with managed mods.
+[/list]
+
+Compression support depends on the file system used by the mod staging directory. Unmanaged or foreign mods are not supported.
+
+[b]Safety and privacy[/b]
+
+The extension performs local file operations. It does not need a network connection. The bundled native helper is checked before use, and the extension falls back to Windows tools if the helper or the requested NTFS feature is unavailable.
+
+The helper is an unsigned Windows executable. Its source and GPL-3.0 license are included in the project repository:
+[url=https://github.com/nwn900/mod-compressor-tool]https://github.com/nwn900/mod-compressor-tool[/url]
+
+[b]License[/b]
+
+GPL-3.0. See the included LICENSE-GPL-3.0.txt file.
+
+[b]Support information[/b]
+
+This is a disk-space tool, not an archive creator. It uses Windows transparent compression, so the game still sees the original file names and paths. Keep a normal backup of important mod profiles before testing new compression settings.

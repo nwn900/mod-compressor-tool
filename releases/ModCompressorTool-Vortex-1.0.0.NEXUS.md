@@ -23,6 +23,7 @@ folder, MO2 `plugins/` tree, source tree, nested archive, or password.
   requires Vortex 1.0.0+, bundles an unsigned native helper, and falls back to
   `compact.exe` when the helper is unavailable.
 - Changelog: use the included `CHANGELOG.md` text.
+- Description: use [`ModCompressorTool-Vortex-1.0.0.NEXUS_DESCRIPTION.bbcode`](ModCompressorTool-Vortex-1.0.0.NEXUS_DESCRIPTION.bbcode).
 
 ## Checks before submission
 
