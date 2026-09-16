@@ -1,8 +1,8 @@
 # Changelog
 
-## 1.1.0 — 2026-09-16
+## 1.0.0 — 2026-09-16
 
-This is the standalone Vortex archive for the audited 1.1.0 extension. The
+This is the standalone Vortex archive for the audited 1.0.0 extension. The
 runtime files are at the archive root, as required by Vortex, and the native
 helper is included at `native/mod-compressor-helper.exe`.
 

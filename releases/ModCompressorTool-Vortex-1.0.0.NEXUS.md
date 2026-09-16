@@ -1,4 +1,4 @@
-# Nexus Mods upload notes — Mod Compressor Vortex 1.1.0
+# Nexus Mods upload notes — Mod Compressor Vortex 1.0.0
 
 This note is for the publisher. It is not part of the Vortex upload archive.
 
@@ -6,7 +6,7 @@ This note is for the publisher. It is not part of the Vortex upload archive.
 
 Upload only:
 
-`releases/ModCompressorTool-Vortex-1.1.0.zip`
+`releases/ModCompressorTool-Vortex-1.0.0.zip`
 
 The archive root contains `info.json`, `index.js`, `native/`, `README.md`,
 `CHANGELOG.md`, and `LICENSE-GPL-3.0.txt`. There is no enclosing `vortex/`
@@ -17,7 +17,7 @@ folder, MO2 `plugins/` tree, source tree, nested archive, or password.
 - Area: **Modding Tools** (`site`).
 - Category: select the current **Vortex Extensions** category shown by the
   uploader. Older wiki pages use different labels for the same area.
-- File version: **1.1.0**, exactly matching `info.json`.
+- File version: **1.0.0**, exactly matching `info.json`.
 - Main File: use one Main File for the extension listing/review route.
 - Description: state that this is a Windows/NTFS utility for Bethesda mods,
   requires Vortex 1.0.0+, bundles an unsigned native helper, and falls back to
@@ -41,8 +41,8 @@ index.js
   SHA-256 7E8C2FE044B78E18FC9FC5D39A54A22037DF48584D40DE0F53B75EBB6BF0B610
 native/mod-compressor-helper.exe
   SHA-256 7A921C4C96500313DFFF02CFA038320347B0627B12463E022ABC7541FFF67E34
-ModCompressorTool-Vortex-1.1.0.zip
-  SHA-256 439F1D93FA5227D7D2D4B90D290E8EE355D68E1276A27FDB673C423CBACCDC68
+ModCompressorTool-Vortex-1.0.0.zip
+  SHA-256 6DE04002F95C210DACB75E6CFDA53BF117ADBD63EDCE9A57C0BC1C151A47BF42
 ```
 
 Nexus scans executable content. If a scanner reports a false positive, keep

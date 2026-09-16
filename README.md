@@ -24,8 +24,8 @@ MO2\plugins\native\mod-compressor-helper.exe
 - [`VORTEX_VS_MO2_DIFFERENTIAL_ANALYSIS.md`](VORTEX_VS_MO2_DIFFERENTIAL_ANALYSIS.md) — detailed comparison and port plan.
 - [`releases/ModCompressorTool-4.0.4/README.md`](releases/ModCompressorTool-4.0.4/README.md) — release notes, hashes, and install details.
 - [`releases/ModCompressorTool-4.0.4/vortex/`](releases/ModCompressorTool-4.0.4/vortex/) — Vortex 1.1.0 runtime and source package.
-- [`releases/ModCompressorTool-Vortex-1.1.0/`](releases/ModCompressorTool-Vortex-1.1.0/) — standalone Vortex package with the required archive-root layout.
-- [`releases/ModCompressorTool-Vortex-1.1.0.zip`](releases/ModCompressorTool-Vortex-1.1.0.zip) — ready-to-upload Vortex archive and adjacent SHA-256 checksum.
+- [`releases/ModCompressorTool-Vortex-1.0.0/`](releases/ModCompressorTool-Vortex-1.0.0/) — standalone Vortex package with the required archive-root layout.
+- [`releases/ModCompressorTool-Vortex-1.0.0.zip`](releases/ModCompressorTool-Vortex-1.0.0.zip) — ready-to-upload Vortex archive and adjacent SHA-256 checksum.
 
 The native helper source and build instructions are under [`native`](native).
 The project is licensed under GPL-3.0; the release package includes the full

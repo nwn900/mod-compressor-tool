@@ -1,4 +1,4 @@
-# Mod Compressor — Vortex Extension 1.1.0
+# Mod Compressor — Vortex Extension 1.0.0
 
 Mod Compressor saves disk space by applying Windows NTFS transparent
 compression to Bethesda game mod files. The game continues to read the files
@@ -16,7 +16,7 @@ also depends on the file system used by the mod staging directory.
 
 ## Installation
 
-1. Download `ModCompressorTool-Vortex-1.1.0.zip`.
+1. Download `ModCompressorTool-Vortex-1.0.0.zip`.
 2. In Vortex, open **Extensions** and use **Drop file** to install the
    archive.
 3. Enable **Mod Compressor** when Vortex asks.
@@ -61,4 +61,4 @@ Source, tests, and build instructions are available in the
 [Mod Compressor Tool repository](https://github.com/nwn900/mod-compressor-tool).
 The extension and helper are GPL-3.0; see `LICENSE-GPL-3.0.txt`.
 
-See `CHANGELOG.md` for the user-visible changes in version 1.1.0.
+See `CHANGELOG.md` for the user-visible changes in version 1.0.0.
