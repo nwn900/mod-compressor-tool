@@ -33,6 +33,12 @@ PNG and is kept beside the two runtime entry files. There is no enclosing
 - The previous `1` version (version ID `9856949954119`, game-scoped file ID `9799`) is retained as an old version.
 - The new file was uploaded through the Nexus v3 upload and file-version endpoints using the archive hash recorded above.
 
+## Vortex review submission
+
+- Review form submitted: [Nexus-Mods/Vortex issue #24222](https://github.com/Nexus-Mods/Vortex/issues/24222).
+- The submission uses the Nexus username `nwn9`, extension page `site/mods/2330`, and Modding Tools game URL `games/site`.
+- The issue records the root package layout, 640x360 artwork, version `1.0.0`, source repository, validation results, and tested runtime build.
+
 ## Checks before submission
 
 1. Run `scripts/validate-vortex-package.ps1` against the release directory and
